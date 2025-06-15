@@ -1,0 +1,256 @@
+/* ===== ESTILOS GERAIS ===== */
+body {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(255, 107, 0, 0.3);
+    text-align: center;
+}
+
+header h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #ff8c00;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ===== BOTÕES DO HEADER ===== */
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+header a.btn {
+    background-color: rgba(255, 107, 0, 0.2);
+    color: #ff8c00;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+header a.btn:hover {
+    background-color: rgba(255, 107, 0, 0.3);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.2);
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+main h3 {
+    color: #ff8c00;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.3);
+}
+
+main a.btn {
+    background-color: rgba(255, 107, 0, 0.2);
+    color: #ff8c00;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+main a.btn:hover {
+    background-color: rgba(255, 107, 0, 0.3);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.2);
+}
+main div.btn2 a.btn {
+    background-color: rgba(197, 197, 197, 0.2);
+    color: white;
+    border: 1px solid rgba(197, 197, 197, 0.3);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+main div.btn2 a.btn:hover {
+    background-color: rgba(197, 197, 197, 0.3);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(197, 197, 197, 0.2);
+}
+
+main a.btn-primary {
+    background-color: rgba(255, 107, 0, 0.2);
+    color: #ff8c00;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+main a.btn-primary:hover {
+    background-color: rgba(255, 107, 0, 0.3);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.2);
+}
+/* ===== CARDS DE EVENTO ===== */
+.card {
+    background: rgba(30, 30, 30, 0.9);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #ff6b00;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff8c00;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #ddd;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ===== BOTÕES DE AÇÃO ===== */
+.btn-action-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-success {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+    border: 1px solid rgba(40, 167, 69, 0.3);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.btn-success:hover {
+    background-color: rgba(40, 167, 69, 0.3);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: rgba(220, 53, 69, 0.3);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== MENSAGEM SEM EVENTOS ===== */
+.no-events {
+    background: rgba(30, 30, 30, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.no-events p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .header-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header a.btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .btn-action-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn-success, .btn-danger {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        padding: 0 1rem;
+    }
+    
+    main h3 {
+        font-size: 1.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+    }
+}

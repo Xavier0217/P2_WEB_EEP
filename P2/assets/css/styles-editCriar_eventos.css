@@ -1,0 +1,211 @@
+body {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(255,107,0,0.8) 0%, rgba(20,20,20,0.9) 100%);
+    padding: 4rem 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+}
+
+header p.subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 1rem auto 0;
+    color: rgba(255,255,255,0.9);
+}
+
+main {
+    flex: 1;
+    padding: 0 1rem 3rem;
+}
+
+form {
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    color: white;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    background-color: #e7e7e7;
+    border: 1px solid #444;
+    color: #444;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.event-form {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.event-form label {
+    color: #ff8c00;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.event-form .form-control {
+    background-color: rgba(50, 50, 50, 0.7);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    color: #f1f1f1;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.event-form .form-control:focus {
+    background-color: rgba(60, 60, 60, 0.9);
+    border-color: #ff6b00;
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+    outline: none;
+}
+
+main button.btn{
+    background-color: rgba(255, 107, 0, 0.2);
+    color: #ff8c00;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+main button.btn:hover{
+    background-color: rgba(255, 107, 0, 0.3);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.2);
+}
+
+main a.btn {
+    background-color: rgba(197, 197, 197, 0.2);
+    color: white;
+    border: 1px solid rgba(197, 197, 197, 0.3);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+main a.btn:hover {
+    background-color: rgba(157, 157, 157, 0.3);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(157, 157, 157, 0.2);
+}
+
+h3, label {
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ff6b00 !important;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #ff8c00 !important;
+}
+
+/* Botão Dashboard mais discreto */
+.nav-link.dashboard {
+    color: #ff8c00 !important;
+    border-radius: 5px;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.nav-link.dashboard:hover {
+    color: white !important;
+    background-color: rgba(255, 107, 0, 0.1);
+    border-color: rgba(255, 107, 0, 0.5);
+}
+
+/* Responsividade para o navbar */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .nav-link.dashboard {
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,85 @@
+body {
+    background: url('../img/tinta-preta-laranja.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+    background: rgba(20, 20, 20, 0.85); 
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.login-container h2 {
+    color: #e7e7e7;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login-container .form-control {
+    background: #e7e7e7;
+    border: 1px solid #444;
+    color: #444;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.login-container .form-control:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+}
+
+.login-container .btn-primary {
+    background-color: #ff6b00;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.login-container .btn-primary:hover {
+    background-color: #e05d00;
+    transform: translateY(-2px);
+}
+
+
+.login-container a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    color: #ff6b00;
+    text-decoration: underline;
+}
+
+.login-container .alert-danger {
+    background-color: rgba(255, 0, 0, 0.2);
+    border-color: #ff3333;
+    color: #ff6b6b;
+}
+
+.login-container .form-control::placeholder {
+    color: #aaa;
+}
+
+.text-orange {
+    color: #ff6b00;
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.2);
+    border-color: #28a745;
+    color: #b8f7c5;
+}
+

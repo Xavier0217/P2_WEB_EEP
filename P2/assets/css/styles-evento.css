@@ -1,0 +1,126 @@
+/* ===== ESTILOS GERAIS ===== */
+body {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== CABEÇALHO ===== */
+.event-header {
+    background: linear-gradient(135deg, rgba(255,107,0,0.8) 0%, rgba(20,20,20,0.9) 100%);
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ===== BOTÃO VOLTAR ===== */
+.btn-voltar {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-voltar:hover {
+    background-color: rgba(255,107,0,0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255,107,0,0.3);
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.event-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+}
+
+/* ===== CARD DE EVENTO ===== */
+.event-card {
+    background: rgba(30, 30, 30, 0.9);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-top: 3px solid #ff6b00;
+}
+
+.event-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff6b00;
+}
+
+.event-body {
+    padding: 2rem;
+    text-align: left;
+}
+
+.event-description {
+    color: #ddd;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.event-details {
+    margin-top: 2rem;
+}
+
+.event-details p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.event-details strong {
+    color: #ff8c00;
+    font-weight: 600;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .event-header h1 {
+        font-size: 2rem;
+    }
+    
+    .event-img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .event-header {
+        padding: 2rem 1rem;
+    }
+    
+    .event-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .event-body {
+        padding: 1.5rem;
+    }
+    
+    .event-img {
+        height: 250px;
+    }
+}
